@@ -11,13 +11,13 @@
         android:label="Principal"
         tools:layout="@layout/home_fragment" />
     <fragment
-        android:id="@+id/destDishes"
-        android:name="es.saladillo.nicolas.dailydiet.ui.fragments.dishes.Dishes"
-        android:label="Dishes"
-        tools:layout="@layout/dishes_fragment" />
-    <fragment
         android:id="@+id/destPantry"
         android:name="es.saladillo.nicolas.dailydiet.ui.fragments.pantry.Pantry"
         android:label="Pantry"
         tools:layout="@layout/pantry_fragment" />
+    <fragment
+        android:id="@+id/destRecipes"
+        android:name="es.saladillo.nicolas.dailydiet.ui.fragments.recipes.Recipes"
+        android:label="Recipes"
+        tools:layout="@layout/recipes_fragment" />
 </navigation>

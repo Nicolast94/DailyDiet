@@ -1,4 +1,4 @@
-package es.saladillo.nicolas.dailydiet.ui.fragments.dishes;
+package es.saladillo.nicolas.dailydiet.ui.fragments.recipes;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,20 +14,25 @@ import android.view.ViewGroup;
 
 import es.saladillo.nicolas.dailydiet.R;
 
-public class Dishes extends Fragment {
+public class Recipes extends Fragment {
 
-    private DishesViewModel vm;
+    private RecipesViewModel mViewModel;
+
+    public static Recipes newInstance() {
+        return new Recipes();
+    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.dishes_fragment, container, false);
+        return inflater.inflate(R.layout.recipes_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        vm = ViewModelProviders.of(this).get(DishesViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(RecipesViewModel.class);
+        // TODO: Use the ViewModel
     }
 
 }
